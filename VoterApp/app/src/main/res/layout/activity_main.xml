@@ -7,14 +7,82 @@
         android:layout_height="match_parent"
         tools:context=".ui.MainActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_login_label"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="40dp"
+            android:text="Log In Screen"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_log_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Log In"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_login_label" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:hint="enter email id"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_log_in" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:hint="Enter password"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etv_email" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_log_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/purple_200"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etv_password" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:background="@color/purple_200"
+            android:text="register"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etv_password" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
