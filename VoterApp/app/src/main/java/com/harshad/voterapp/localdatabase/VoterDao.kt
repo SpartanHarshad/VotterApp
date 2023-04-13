@@ -16,19 +16,19 @@ interface VoterDao {
     suspend fun saveVote(voterBoardEntity: VoterBoardEntity)
 
     @Query("SELECT * FROM voter_board WHERE u_email = :email")
-    suspend fun checkUserAlreadyVoted(email: String): LiveData<Int>
+    fun checkUserAlreadyVoted(email: String): LiveData<Int>
 
     @Query("SELECT SUM (can_1) FROM voter_board")
-    suspend fun getVoteCountFirstCandidate(): LiveData<Double>
+    fun getVoteCountFirstCandidate(): LiveData<Double>
 
     @Query("SELECT SUM (can_2) FROM voter_board")
-    suspend fun getVoteCountSecondCandidate(): LiveData<Double>
+    fun getVoteCountSecondCandidate(): LiveData<Double>
 
     @Query("SELECT SUM (can_3) FROM voter_board")
-    suspend fun getVoteCountThirdCandidate(): LiveData<Double>
+    fun getVoteCountThirdCandidate(): LiveData<Double>
 
     @Query("SELECT SUM (can_4) FROM voter_board")
-    suspend fun getVoteCountFourthCandidate(): LiveData<Double>
+    fun getVoteCountFourthCandidate(): LiveData<Double>
 
 
 }
