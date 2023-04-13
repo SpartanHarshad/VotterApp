@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "617641669836",
+    "project_id": "votterapp-1affa",
+    "storage_bucket": "votterapp-1affa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617641669836:android:6f83ba6d2cefd0e4133e69",
+        "android_client_info": {
+          "package_name": "com.harshad.voterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617641669836-c4kq3kip7l84edkugv6gbi3evqnbltu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD0WPaRu6JbD0XthWd9NdnhJZlDlbgyJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617641669836-c4kq3kip7l84edkugv6gbi3evqnbltu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
