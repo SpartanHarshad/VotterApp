@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "voter_board")
-data class VoterBoard(
+data class VoterBoardEntity(
     @ColumnInfo(name = "can_1")
     var can1: String,
     @ColumnInfo(name = "can_2")
