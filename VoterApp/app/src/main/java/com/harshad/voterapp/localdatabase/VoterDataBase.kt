@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 
 @Database(entities = [UserEntity::class, VoterBoardEntity::class], version = 1)
 abstract class VoterDataBase : RoomDatabase() {
-    abstract fun getVoterDao(): VoterDataBase
+    abstract fun getVoterDao(): VoterDao
 
     companion object {
         private var INSTANCE: VoterDataBase? = null
